@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi PLatillo</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <table class="table table-striped  table-hover table-bordered" >
+        <thead>
+            <tr>
+                <th class="table-dark"></th>
+                <th class="table-dark">NOMBRE DE PLATILLO</th>
+                <th class="table-dark">DESCRIPCIÓN</th>
+                <th class="table-dark">OPCIONES DE COMPRA</th>
+                <th class="table-dark">PAIS DE ORIGEN</th>
+                <th class="table-dark">PRECIO</th>
+                <th class="table-dark"></th>
+                <th class="table-dark"></th>
+            </tr>
+
+        </thead>
+        <tbody>
+        </tr>
+        <tr>
+        <td><figure class="figure">
+            <img src="Img/camarones.jpg" width="75px" class="figure-img img-fluid rounded" alt="imagen de empleado">
+            <figcaption class="figure-caption">Platillo</figcaption>
+          </figure></td>
+        <td>Camarón al ajillo</td>
+        <td><span class="badge text-bg-warning", onclick="Mensaje()">Receta</span>Si te gustan los camarones y AMAS el ajo, esperamos que pronto pruebes esta receta de camarones al ajillo. ¡Toda una delicia!</td>
+        <td>EN RESTAURANTE</td>
+        <td>Republica Dominicana</td>
+        <td>$35.99</td>
+        <td>
+            <button class="btn-info"><i class="bi bi-gear" style="color: blue;"></i></td></button>
+        </td>
+        <td>
+            <button class="btn-info"><i class= "bi bi-pencil-square"style="color: blue;"></i></td></button>
+        </td>
+        </tr>
+        <tr>
+            <td><figure class="figure">
+                <img src="Img/carne-asada-sq.jpg" width="75px"  class="figure-img img-fluid rounded" alt="Imagen de empleada">
+                <figcaption class="figure-caption">Platillo.2</figcaption>
+              </figure></td>
+            <td>Carne asada</td>
+            <td><span class="badge text-bg-warning", onclick="Mensaje2()">Receta 2</span>Corte de carne de res asado al carbón o a la plancha. Tradicionalmente se acompaña con alguna salsa picante, guacamole, frijoles y tortillas; estos complementos cambian dependiendo de la región del país.</td>
+            <td>EN RESTAURANTE</td>
+            <td>America Latina</td>
+            <td>$30.99</td>
+            <td>
+                <button class="btn-info"><i class="bi bi-gear" style="color: blue;"></i></td></button>   
+            </td>
+            <td>
+                <button class="btn-info"><i class= "bi bi-pencil-square"style="color: blue;"></i></td></button>
+            </td>
+        </tr>
+        <tr>
+            <td><figure class="figure">
+                <img src="Img/sushi.jpg" width="75px"  class="figure-img img-fluid rounded" alt="Imagen de empleada">
+                <figcaption class="figure-caption">Platillo.3</figcaption>
+              </figure></td>
+            <td>Sushi</td>
+            <td><span class="badge text-bg-warning", onclick="Mensaje3()">Receta 3</span> El sushi es un plato de la gastronomía japonesa con base de arroz condimentado con vinagre y azúcar. Aunque tradicionalmente se usaba pescado crudo para acompañar el arroz, con el tiempo los ingredientes han ido evolucionando y ahora podemos encontrar desde verduras a pescado cocinado o carne.</td>
+            <td>EN RESTAURANTE Y A DOMICILIO</td>
+            <td>Japón</td>
+            <td>$20.99</td>
+            <td>
+                <button class="btn-info">
+                    <i class="bi bi-gear" style="color: blue;"></i></td></button>
+            </td>
+            <td>
+                <button class="btn-info"><i class= "bi bi-pencil-square"style="color: blue;"></i></td></button>
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <th>Total</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th><i class="bi bi-cash"></i></th>
+        </tfoot>
+ 
+    </table>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+   function Mensaje() {
+    Swal.fire({
+  title: 'Camaron al ajillo',
+  text: 'Plato principal \n 🍤Camaron al ajillo \n 🍺Bebida para acompañar',
+  imageUrl: 'img/mariscos.png',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Información de platillo',
+})
+    
+   }
+</script>
+<script>
+    function Mensaje2() {
+     Swal.fire({
+   title: 'Carne asada',
+   text: 'Plato premium \n 🥩Carne asada \n 🍷Bebida para acompañar',
+   imageUrl: 'img/filete.png',
+   imageWidth: 400,
+   imageHeight: 200,
+   imageAlt: 'Información de platillo',
+ })
+     
+    }
+ </script>
+ <script>
+    function Mensaje3() {
+     Swal.fire({
+   title: 'Sushi',
+   text: 'Plato especial \n 🍣Sushi \n 🥃Bebida para acompañar',
+   imageUrl: 'img/sushi.png',
+   imageWidth: 400,
+   imageHeight: 200,
+   imageAlt: 'Información de platillo',
+ })
+     
+    }
+ </script>
+</body>
+</html>
